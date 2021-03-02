@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM, { render } from 'react-dom';
 import Clock from './frontend/clock';
 import Tabs from './frontend/tabs';
+import Weather from './frontend/weather';
 
 const testArray = [
     {title : "tab1", content: "I love JSX"}, 
@@ -14,6 +15,7 @@ const Root = ()=>{
         <div>
             <Clock />
             <Tabs tArray = {testArray}/>
+            <Weather />
         </div>
 
     );

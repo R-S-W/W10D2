@@ -14,9 +14,58 @@
     border: 2px solid black;
     background: orange;
     padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
 
 #root {
     display: flex;
     justify-content: center;
 }
+
+#tag{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+    color: white;
+
+
+}
+
+#tag-headers{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid black; */
+    cursor: pointer;
+    background: lightblue;
+    color: white;
+
+}
+
+#tab-content {
+    display: flex;
+    border: 2px solid black;
+    width: 150px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    /* background: lightblue; */
+    color: white;
+}
+
+.tag-elements{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border: 2px solid black;
+        padding: 10px;
+}
+
+.tag-elements:hover{
+    background: black ;
+    color: white;
+}
+
