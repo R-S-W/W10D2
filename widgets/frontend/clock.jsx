@@ -10,10 +10,25 @@ class Clock extends React.Component{
     render(){
         const currentTime = this.state.currentTime;
         const [hours, minutes, seconds] = [currentTime.getHours(), currentTime.getMinutes(), currentTime.getSeconds()];
+        const month = currentTime.toLocaleString("default", {month: "long"}) 
+        const day = currentTime.toString().split(" ")[0]
         return (
-            <div>
+            <div id = 'clock'>
                 <h1>Clock</h1>
-                <h3>{`${hours}:${minutes}:${seconds}`}</h3>
+                <section>
+                    <h3 className = 'time'>
+                        <label>Time: </label>
+                        <span>
+                            {`${hours}:${minutes}:${seconds}`}
+                        </span>
+                    </h3>
+                    <h3 className = 'time'>
+                        <label>Date: </label>
+                        <span>
+                            {`${day} ${month} ${currentTime.getDate()} ${currentTime.getYear() + 1900}`}
+                        </span>
+                    </h3>
+                </section>
             </div>
         );
     }

@@ -1,0 +1,22 @@
+#clock {
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 22px;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+#clock section {
+    width: 300px;
+    border: 2px solid black;
+    background: orange;
+    padding: 20px;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+}
