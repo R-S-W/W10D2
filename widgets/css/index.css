@@ -25,10 +25,8 @@
 }
 
 #tag{
-    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 
     color: white;
@@ -39,7 +37,6 @@
 #tag-headers{
     display: flex;
     flex-direction: row;
-    /* border: 2px solid black; */
     cursor: pointer;
     background: lightblue;
     color: white;
@@ -53,8 +50,7 @@
     height: 200px;
     justify-content: center;
     align-items: center;
-    /* background: lightblue; */
-    color: white;
+    background: lightblue;
 }
 
 .tag-elements{

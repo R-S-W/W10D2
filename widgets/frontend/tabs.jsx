@@ -13,6 +13,7 @@ class Tabs extends React.Component {
     clickHandler(event){
         event.preventDefault();
         const idx  = parseInt(event.currentTarget.id);
+        debugger
         this.setState({idx});
     }
 

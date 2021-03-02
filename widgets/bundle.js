@@ -160,6 +160,7 @@ var Tabs = /*#__PURE__*/function (_React$Component) {
     value: function clickHandler(event) {
       event.preventDefault();
       var idx = parseInt(event.currentTarget.id);
+      debugger;
       this.setState({
         idx: idx
       });
